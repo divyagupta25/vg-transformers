@@ -55,7 +55,7 @@ dates = [
 ]
 
 for date_set in dates:
-    for date in dates:
+    for date in date_set:
         n_files = count_files(date=date, prefix=PREFIX)
         filenames = [date + PREFIX + '0' + str(i) + '.tar' for i in range(1, n_files + 1)]
 
